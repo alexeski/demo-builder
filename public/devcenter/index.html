@@ -1,128 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="css/main.css?tm=54" >
-    <link rel="stylesheet" type="text/css" href="css/popupmedia.css?tm=54" >
-    <link rel="stylesheet" type="text/css" href="css/nano.min.css?tm=54">
-    <link rel="stylesheet" type="text/css" href="css/modal.css?tm=54">
-    <link rel="stylesheet" type="text/css" href="css/jspanel.min.css?tm=54">
-    <link rel="stylesheet" type="text/css" href="css/all.css?tm=54">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <script type="text/javascript" src="https://online.tableau.com/javascripts/api/tableau-2.7.0.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="dist/micromodal.min.js?tm=54"></script>
-    <script type="text/javascript" src="dist/jspanel.min.js?tm=54"></script>
-    <script type="text/javascript" src="dist/DragDropTouch.js?tm=54"></script>
-    <script type="text/javascript" src="dist/editable.js?tm=54"></script>
-    <script type="text/javascript" src="dist/fileSaver.js?tm=54"></script>
-    <script type="text/javascript" src="dist/pickr.min.js?tm=54"></script>
-    <script type="text/javascript" src="main.min.js?tm=54"></script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="No-Code Demo Builder">
-    <title>Demo-Builder</title>
-    <script>
-      function findGetParameter(parameterName) {
-        var result = null,
-            tmp = [];
-        location.search
-            .substr(1)
-            .split("&")
-            .forEach(function (item) {
-              tmp = item.split("=");
-              if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
-            });
-        return result;
-      }
-      $('document').ready(function(){
-        setTimeout(()=>{
-          if(findGetParameter("beta")!=null){
-            document.querySelectorAll(".beta").forEach((el)=>{
-              el.classList.remove("beta");
-            })
-          }
-        },1000)
-      });
-     
-    </script>
-</head>
-<body onload="init()">
-<div class="page-wrapper chiller-theme toggled">
-  <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
-    <i class="fas fa-bars little-burger"></i>
-  </a>
-  <nav id="sidebar" class="sidebar-wrapper">
-    <div class="sidebar-content">
-      <div class="sidebar-brand">
-        <a class="nosel" style="text-align: center" href="#"> DEMO-BUILDER</a>
-        <div id="close-sidebar">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>   
 
-      <div class="sidebar-menu">
-        <ul>
-            <li class="header-menu" style="cursor: pointer;" data-media="https://www.youtube.com/embed/XgZxIhVGbO0?modestbranding=1">
-                <a href="#" style="display: flex">
-                <i class="fa fa-question-circle" ></i>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/main.css?tm=54">
+  <link rel="stylesheet" type="text/css" href="css/popupmedia.css?tm=54">
+  <link rel="stylesheet" type="text/css" href="css/nano.min.css?tm=54">
+  <link rel="stylesheet" type="text/css" href="css/modal.css?tm=54">
+  <link rel="stylesheet" type="text/css" href="css/jspanel.min.css?tm=54">
+  <link rel="stylesheet" type="text/css" href="css/all.css?tm=54">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script type="text/javascript" src="https://online.tableau.com/javascripts/api/tableau-2.7.0.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="dist/micromodal.min.js?tm=54"></script>
+  <script type="text/javascript" src="dist/jspanel.min.js?tm=54"></script>
+  <script type="text/javascript" src="dist/DragDropTouch.js?tm=54"></script>
+  <script type="text/javascript" src="dist/editable.js?tm=54"></script>
+  <script type="text/javascript" src="dist/fileSaver.js?tm=54"></script>
+  <script type="text/javascript" src="dist/pickr.min.js?tm=54"></script>
+  <script type="text/javascript" src="main.min.js?tm=54"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="No-Code Demo Builder">
+  <title>Demo-Builder Test</title>
+  <script>
+    function findGetParameter(parameterName) {
+      var result = null,
+        tmp = [];
+      location.search
+        .substr(1)
+        .split("&")
+        .forEach(function (item) {
+          tmp = item.split("=");
+          if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+        });
+      return result;
+    }
+    $('document').ready(function () {
+      setTimeout(() => {
+        if (findGetParameter("beta") != null) {
+          document.querySelectorAll(".beta").forEach((el) => {
+            el.classList.remove("beta");
+          })
+        }
+      }, 1000)
+    });
+  </script>
+</head>
+
+<body onload="init()">
+  <div class="page-wrapper chiller-theme toggled">
+    <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+      <i class="fas fa-bars little-burger"></i>
+    </a>
+    <nav id="sidebar" class="sidebar-wrapper">
+      <div class="sidebar-content">
+        <div class="sidebar-brand">
+          <a class="nosel" style="text-align: center" href="#"> DEMO-BUILDER</a>
+          <div id="close-sidebar">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+
+        <div class="sidebar-menu">
+          <ul>
+            <li class="header-menu" style="cursor: pointer;"
+              data-media="https://www.youtube.com/embed/XgZxIhVGbO0?modestbranding=1">
+              <a href="#" style="display: flex">
+                <i class="fa fa-question-circle"></i>
                 <div class="nosel" style="margin-left: 3px;margin-top: 2px;">5mn Tutorial</div>
-                </a>
+              </a>
             </li>
             <li onclick="showSettings()">
-                <a href="#">
+              <a href="#">
                 <i class="fa fa-cog"></i>
                 <span class="nosel">Global Settings</span>
-                </a>
+              </a>
             </li>
             <li class="init sidebar-dropdown tdropdown active">
               <a href="#">
-              <i class="fa fa-globe"></i>
-              <span class="templateName nosel">Web Template</span>
-              <span class="badge badge-pill badge-primary tnum"></span>
+                <i class="fa fa-globe"></i>
+                <span class="templateName nosel">Web Template</span>
+                <span class="badge badge-pill badge-primary tnum"></span>
               </a>
               <div class="sidebar-submenu tdropsub">
-              <ul class="templateList">
-                <details class="templ thumb_text basic" open>
-                  <summary>Light</summary>
-                  <div id="basic" class="thumb templ" onclick="switchTemplate('templates/grid/index.html',this)">
-                    <div class="nosel thumb_text">Horizontal</div>
-                    <i class="tpiconF fas fa-cogs defaulthidden" onclick="showTemplateSettings(event)"></i>
-                    <i class="tpicon fas fa-download defaulthidden" onclick="openExportOptions(event)"></i>
-                    <i class="check fa fa-check"></i> 
-                  </div>
-                  <div id="basicV" class="thumb templ" onclick="switchTemplate('templates/gridV/index.html',this)">
-                    <div class="nosel thumb_text">Vertical</div>
-                    <i class="tpiconF fas fa-cogs defaulthidden" onclick="showTemplateSettings(event)"></i>
-                    <i class="tpicon fas fa-download defaulthidden" onclick="openExportOptions(event)"></i>
-                    <i class="check fa fa-check"></i> 
-                  </div>
-                </details>  
-                <details class="templ thumb_text advanced">
-                  <summary>Avanced</summary>
-                  <!-- <div id="nope" class="thumb templ" onclick="switchTemplate('templates/basic/index.html',this)">
+                <ul class="templateList">
+                  <details class="templ thumb_text basic" open>
+                    <summary>Light</summary>
+                    <div id="basic" class="thumb templ" onclick="switchTemplate('templates/grid/index.html',this)">
+                      <div class="nosel thumb_text">Horizontal</div>
+                      <i class="tpiconF fas fa-cogs defaulthidden" onclick="showTemplateSettings(event)"></i>
+                      <i class="tpicon fas fa-download defaulthidden" onclick="openExportOptions(event)"></i>
+                      <i class="check fa fa-check"></i>
+                    </div>
+                    <div id="basicV" class="thumb templ" onclick="switchTemplate('templates/gridV/index.html',this)">
+                      <div class="nosel thumb_text">Vertical</div>
+                      <i class="tpiconF fas fa-cogs defaulthidden" onclick="showTemplateSettings(event)"></i>
+                      <i class="tpicon fas fa-download defaulthidden" onclick="openExportOptions(event)"></i>
+                      <i class="check fa fa-check"></i>
+                    </div>
+                  </details>
+                  <details class="templ thumb_text advanced">
+                    <summary>Avanced</summary>
+                    <!-- <div id="nope" class="thumb templ" onclick="switchTemplate('templates/basic/index.html',this)">
                     <div class="nosel thumb_text">Basic</div>
                     <i class="check fa fa-check"></i> 
                   </div> -->
-                  <div id="bs" class="thumb templ" onclick="switchTemplate('templates/bs/index.html',this)">
-                    <div class="nosel thumb_text">Bootstrap</div>
-                    <i class="tpiconF fas fa-cogs defaulthidden" onclick="showTemplateSettings(event)"></i>
-                    <i class="tpicon fas fa-download defaulthidden" onclick="openExportOptions(event)"></i>
-                    <i class="check fa fa-check"></i> 
-                  </div>
-                  <div id="widget" class="thumb templ" onclick="switchTemplate('templates/gridstack/index.html',this)">
-                    <div class="nosel thumb_text">Widgets</div>
-                    <i class="tpiconF fas fa-cogs defaulthidden" onclick="showTemplateSettings(event)"></i>
-                    <i class="tpicon fas fa-download defaulthidden" onclick="openExportOptions(event)"></i>
-                    <i class="check fa fa-check"></i> 
-                  </div>
-                  <div id="market" class="beta thumb templ" onclick="switchTemplate('templates/marketplace/index.html',this)">
-                    <div class="nosel thumb_text">Market Place</div>
-                    <i class="tpiconF fas fa-cogs defaulthidden" onclick="showTemplateSettings(event)"></i>
-                    <i class="tpicon fas fa-download defaulthidden" onclick="openExportOptions(event)"></i>
-                    <i class="check fa fa-check"></i> 
-                  </div>
-                  <!-- <div id="creative" class="thumb templ" onclick="switchTemplate('templates/lightboot/examples/dashboard.html',this)">
+                    <div id="bs" class="thumb templ" onclick="switchTemplate('templates/bs/index.html',this)">
+                      <div class="nosel thumb_text">Bootstrap</div>
+                      <i class="tpiconF fas fa-cogs defaulthidden" onclick="showTemplateSettings(event)"></i>
+                      <i class="tpicon fas fa-download defaulthidden" onclick="openExportOptions(event)"></i>
+                      <i class="check fa fa-check"></i>
+                    </div>
+                    <div id="widget" class="thumb templ"
+                      onclick="switchTemplate('templates/gridstack/index.html',this)">
+                      <div class="nosel thumb_text">Widgets</div>
+                      <i class="tpiconF fas fa-cogs defaulthidden" onclick="showTemplateSettings(event)"></i>
+                      <i class="tpicon fas fa-download defaulthidden" onclick="openExportOptions(event)"></i>
+                      <i class="check fa fa-check"></i>
+                    </div>
+                    <div id="market" class="beta thumb templ"
+                      onclick="switchTemplate('templates/marketplace/index.html',this)">
+                      <div class="nosel thumb_text">Market Place</div>
+                      <i class="tpiconF fas fa-cogs defaulthidden" onclick="showTemplateSettings(event)"></i>
+                      <i class="tpicon fas fa-download defaulthidden" onclick="openExportOptions(event)"></i>
+                      <i class="check fa fa-check"></i>
+                    </div>
+                    <!-- <div id="creative" class="thumb templ" onclick="switchTemplate('templates/lightboot/examples/dashboard.html',this)">
                     <div class="nosel thumb_text">Creative</div>
                     <i class="tpiconF fas fa-cogs defaulthidden" onclick="showTemplateSettings(event)"></i>
                     <i class="tpicon fas fa-download defaulthidden" onclick="openExportOptions(event)"></i>
@@ -134,8 +140,8 @@
                     <i class="tpicon fas fa-download defaulthidden" onclick="openExportOptions(event)"></i>
                     <i class="check fa fa-check"></i> 
                   </div> -->
-                </details>
-              </ul>
+                  </details>
+                </ul>
               </div>
             </li>
             <div class="init sidebar-menu topmarg tabpub">
@@ -149,7 +155,8 @@
             <div class="init sidebar-search">
               <div>
                 <div class="input-group">
-                  <input autocomplete="off" id="search" onkeyup="filterViewList(event)" type="search" class="form-control search-menu" placeholder="Search...">
+                  <input autocomplete="off" id="search" onkeyup="filterViewList(event)" type="search"
+                    class="form-control search-menu" placeholder="Search...">
                   <div class="input-group-append">
                     <span class="input-group-text">
                       <i class="fa fa-search" aria-hidden="true"></i>
@@ -157,259 +164,305 @@
                   </div>
                 </div>
               </div>
-            </div>    
+            </div>
             <li class="tol-section init header-menu">
-            <span class="nosel">Server Content</span>
-            </li>  
+              <span class="nosel">Server Content</span>
+            </li>
             <li class="tol-section init sidebar-dropdown pdropdown">
-                <a href="#">
+              <a href="#">
                 <i class="fa fa-folder"></i>
                 <span class="projname nosel">Projects</span>
                 <div class="loadp spinner-border text-success" role="status">
                   <span class="sr-only">Loading...</span>
                 </div>
                 <span class="badge badge-pill badge-primary pnum"></span>
-                </a>
-                <div class="sidebar-submenu pdropsub">
+              </a>
+              <div class="sidebar-submenu pdropsub">
                 <ul class="projects">
                 </ul>
-                </div>
+              </div>
             </li>
             <li class="tol-section init header-menu">
-                <span class="nosel">Project Content</span>
+              <span class="nosel">Project Content</span>
             </li>
             <li class="tol-section init sidebar-dropdown wbdropdown">
-                <a href="#">
+              <a href="#">
                 <i class="fa fa-book"></i>
                 <span class="nosel">Workbooks</span>
                 <div class="loadwb spinner-border text-success" role="status">
                   <span class="sr-only">Loading...</span>
                 </div>
                 <span class="badge badge-pill badge-primary wbnum"></span>
-                </a>
-                <div class="sidebar-submenu wbdropsub">
+              </a>
+              <div class="sidebar-submenu wbdropsub">
                 <ul class="twb">
                 </ul>
-                </div>
+              </div>
             </li>
             <li class="tol-section init header-menu">
-                <span class="nosel">Workbook Content</span>
+              <span class="nosel">Workbook Content</span>
             </li>
             <li class="init sidebar-dropdown vdropdown">
-                <a href="#">
+              <a href="#">
                 <i class="fa fa-chart-line"></i>
                 <span class="nosel">Views</span>
                 <div class="loadview spinner-border text-success" role="status">
                   <span class="sr-only">Loading...</span>
                 </div>
                 <span class="badge badge-pill badge-primary vnum"></span>
-                </a>
-                <div class="sidebar-submenu vdropsub">
+              </a>
+              <div class="sidebar-submenu vdropsub">
                 <ul class="tb">
                 </ul>
-                </div>
+              </div>
             </li>
-        </ul>
+          </ul>
+        </div>
+
       </div>
+    </nav>
 
-    </div>
-  </nav>
+    <main class="page-content">
+      <iframe id="template" src="" height="100%" width="100%" style="border-style: none;"></iframe>
+    </main>
 
-  <main class="page-content">
-    <iframe id="template" src="" height="100%" width="100%" style="border-style: none;"></iframe>
-  </main>
+  </div>
 
-</div>
-
-<div class="force modal micromodal-slide" style="height: 100%;"id="modal-settings" aria-hidden="true">
+  <div class="force modal micromodal-slide" style="height: 100%;" id="modal-settings" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1">
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
         <header class="modal__header">
           <h2 class="modal__title" id="modal-1-title">
             GLOBAL SETTINGS
           </h2>
-          <button data-micromodal-close type="button" class="jsPanel-btn jsPanel-btn-close jsPanel-btn-md" aria-label="Close" style="color: rgb(255, 255, 255);"><svg data-micromodal-close focusable="false" class="jsPanel-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><path data-micromodal-close fill="currentColor" d="M13.7,11l6.1-6.1c0.4-0.4,0.4-0.9,0-1.3l-1.4-1.4c-0.4-0.4-0.9-0.4-1.3,0L11,8.3L4.9,2.3C4.6,1.9,4,1.9,3.7,2.3L2.3,3.7 C1.9,4,1.9,4.6,2.3,4.9L8.3,11l-6.1,6.1c-0.4,0.4-0.4,0.9,0,1.3l1.4,1.4c0.4,0.4,0.9,0.4,1.3,0l6.1-6.1l6.1,6.1 c0.4,0.4,0.9,0.4,1.3,0l1.4-1.4c0.4-0.4,0.4-0.9,0-1.3L13.7,11z"></path></svg></button>
+          <button data-micromodal-close type="button" class="jsPanel-btn jsPanel-btn-close jsPanel-btn-md"
+            aria-label="Close" style="color: rgb(255, 255, 255);"><svg data-micromodal-close focusable="false"
+              class="jsPanel-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+              <path data-micromodal-close fill="currentColor"
+                d="M13.7,11l6.1-6.1c0.4-0.4,0.4-0.9,0-1.3l-1.4-1.4c-0.4-0.4-0.9-0.4-1.3,0L11,8.3L4.9,2.3C4.6,1.9,4,1.9,3.7,2.3L2.3,3.7 C1.9,4,1.9,4.6,2.3,4.9L8.3,11l-6.1,6.1c-0.4,0.4-0.4,0.9,0,1.3l1.4,1.4c0.4,0.4,0.9,0.4,1.3,0l6.1-6.1l6.1,6.1 c0.4,0.4,0.9,0.4,1.3,0l1.4-1.4c0.4-0.4,0.4-0.9,0-1.3L13.7,11z">
+              </path>
+            </svg></button>
         </header>
         <main class="modal__content settings" id="modal-3-content" style="display: flex;flex-wrap: wrap;">
           <div class="help" data-media="https://www.youtube.com/embed/XgZxIhVGbO0?modestbranding=1">
             <div class="nosel" style="margin-left: 3px">Tutorial Video 5mn to know all</div>
-            <i class="fa fa-question-circle" ></i>
+            <i class="fa fa-question-circle"></i>
           </div>
-            <details open>
-                <summary>Server Settings</summary>
-                <div class="settings_block">
-                    <label for="servurl" class="label_settings">Server URL: </label>
-                    <input  id="servurl" class="input input_settings" required="true" placeholder="The server URL">
-                </div>
-                <div class="settings_block">
-                    <label class="label_settings" for="siteName">Site Name: </label>
-                    <input id="siteName" class="input input_settings" required="true" placeholder="The site name">
-                </div>
-                <!-- <div class="settings_block">
+          <details open>
+            <summary>Server Settings</summary>
+            <div class="settings_block">
+              <label for="servurl" class="label_settings">Server URL: </label>
+              <input id="servurl" class="input input_settings" required="true" placeholder="The server URL">
+            </div>
+            <div class="settings_block">
+              <label class="label_settings" for="siteName">Site Name: </label>
+              <input id="siteName" class="input input_settings" required="true" placeholder="The site name">
+            </div>
+            <!-- <div class="settings_block">
                     <label class="label_settings" for="wedit">Sync Filters: </label>
                     <label class="switch">
                     <input id="sync" type="checkbox">
                     <span class="slider round"></span>
                     </label>
                 </div> -->
-            </details>
-            <details open>
-              <summary>Personal Access Token <i class="fa fa-question-circle" data-media="https://www.youtube.com/embed/iTSObR52-2k?modestbranding=1"></i></summary>
-              <div class="settings_block">
-                  <label class="label_settings" for="tokName">Token Name: </label>
-                  <input id="tokName" class="input input_settings" required="true" placeholder="The token name">
-              </div>
-              <div class="settings_block">
-                  <label class="label_settings" for="tokValue">Token Value: </label>
-                  <input type="password" id="tokValue" class="input input_settings" required="true" placeholder="The token value">
-              </div>
-            </details>  
-            <details>
+          </details>
+          <details open>
+            <summary>Personal Access Token <i class="fa fa-question-circle"
+                data-media="https://www.youtube.com/embed/iTSObR52-2k?modestbranding=1"></i></summary>
+            <div class="settings_block">
+              <label class="label_settings" for="tokName">Token Name: </label>
+              <input id="tokName" class="input input_settings" required="true" placeholder="The token name">
+            </div>
+            <div class="settings_block">
+              <label class="label_settings" for="tokValue">Token Value: </label>
+              <input type="password" id="tokValue" class="input input_settings" required="true"
+                placeholder="The token value">
+            </div>
+          </details>
+          <details>
             <summary>Save/Restore Settings</summary>
             <div class="panel_border">
               <label class="label_settings"></label>
               <div class="file_drop">
                 <div id="drop_zone" class="box__input" ondrop="dropFile(event)" ondragover="allowDrop(event)">
                   <input type="file" id="file" class="box__file">
-                  <label class="text_drop" for="file"><li style="width: 35px;" class="fas fa-upload"></li><strong>Choose a file to restore</strong><span class="box__dragndrop"> or drag it here</span>.</label>
-                  </div>
+                  <label class="text_drop" for="file">
+                    <li style="width: 35px;" class="fas fa-upload"></li><strong>Choose a file to restore</strong><span
+                      class="box__dragndrop"> or drag it here</span>.
+                  </label>
+                </div>
               </div>
               <div>
-                <button class="exportBtn modal__btn modal__btn-primary" onclick="saveToFile()">Export Current Settings...</button>
-                <button class="exportBtn modal__btn modal__btn-primary" onclick="clearAllSettings()">Clear All Settings...</button>
+                <button class="exportBtn modal__btn modal__btn-primary" onclick="saveToFile()">Export Current
+                  Settings...</button>
+                <button class="exportBtn modal__btn modal__btn-primary" onclick="clearAllSettings()">Clear All
+                  Settings...</button>
               </div>
             </div>
           </details>
         </main>
         <footer class="modal__footer">
           <button class="modal__btn modal__btn-primary" onclick="saveSettings()"> Save </button>
-          <button class="gogo modal__btn modal__btn-primary" data-micromodal-close aria-label="Close">Tableau Public</button>
+          <button class="gogo modal__btn modal__btn-primary" data-micromodal-close aria-label="Close">Tableau
+            Public</button>
           <button class="gogo modal__btn modal__btn-primary" data-micromodal-close aria-label="Close">Cancel</button>
         </footer>
       </div>
     </div>
-</div> 
-
-
-
-<div class="force modal micromodal-slide" style="height: 100%;" id="modal-pict" aria-hidden="true">
-  <div class="modal__overlay" tabindex="-1">
-    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-      <header class="modal__header">
-        <h2 class="modal__title" id="modal-pict-title">
-          Find Images
-        </h2>
-        <button data-micromodal-close type="button" class="jsPanel-btn jsPanel-btn-close jsPanel-btn-md" aria-label="Close" style="color: rgb(255, 255, 255);"><svg data-micromodal-close focusable="false" class="jsPanel-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><path data-micromodal-close fill="currentColor" d="M13.7,11l6.1-6.1c0.4-0.4,0.4-0.9,0-1.3l-1.4-1.4c-0.4-0.4-0.9-0.4-1.3,0L11,8.3L4.9,2.3C4.6,1.9,4,1.9,3.7,2.3L2.3,3.7 C1.9,4,1.9,4.6,2.3,4.9L8.3,11l-6.1,6.1c-0.4,0.4-0.4,0.9,0,1.3l1.4,1.4c0.4,0.4,0.9,0.4,1.3,0l6.1-6.1l6.1,6.1 c0.4,0.4,0.9,0.4,1.3,0l1.4-1.4c0.4-0.4,0.4-0.9,0-1.3L13.7,11z"></path></svg></button>
-      </header>
-      <main class="modal__content" id="modal-pict-content" style="display: flex;flex-wrap: wrap;">
-         
-      </main>
-      <footer class="modal__footer">
-        <button class="modal__btn modal__btn-primary" onclick="selectedPict()"> Save </button>
-        <button class="gogo modal__btn" data-micromodal-close aria-label="Close">Cancel</button>
-      </footer>
-    </div>
   </div>
-</div> 
 
-<div class="force modal micromodal-slide" style="height: 100%;" id="modal-confirm" aria-hidden="true">
-  <div class="modal__overlay" tabindex="-1">
-    <div class="modal__container" role="dialog" style="width:350px;min-width:200px" aria-modal="true" aria-labelledby="modal-1-title">
-      <header class="modal__header">
-        <h2 class="modal__title" id="">
-          Are you sure ?
-        </h2>
-        <button onclick="clearAllDamn(false)" type="button" class="jsPanel-btn jsPanel-btn-close jsPanel-btn-md" aria-label="Close" style="color: rgb(255, 255, 255);"><svg data-micromodal-close focusable="false" class="jsPanel-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><path data-micromodal-close fill="currentColor" d="M13.7,11l6.1-6.1c0.4-0.4,0.4-0.9,0-1.3l-1.4-1.4c-0.4-0.4-0.9-0.4-1.3,0L11,8.3L4.9,2.3C4.6,1.9,4,1.9,3.7,2.3L2.3,3.7 C1.9,4,1.9,4.6,2.3,4.9L8.3,11l-6.1,6.1c-0.4,0.4-0.4,0.9,0,1.3l1.4,1.4c0.4,0.4,0.9,0.4,1.3,0l6.1-6.1l6.1,6.1 c0.4,0.4,0.9,0.4,1.3,0l1.4-1.4c0.4-0.4,0.4-0.9,0-1.3L13.7,11z"></path></svg></button>
-      </header>
-      <main class="" id="" style="display: flex;flex-wrap: wrap;color:white">
-         <br>This will delete all template settings!<br><br>Unless you have exported your configuration, everything will be lost!<br><br>
-      </main>
-      <footer class="modal__footer">
-        <button class="modal__btn modal__btn-primary" onclick="clearAllDamn(true)"> Do it </button>
-        <button class="gogo modal__btn" aria-label="Close" onclick="clearAllDamn(false)">Cancel</button>
-      </footer>
-    </div>
-  </div>
-</div> 
 
-<div class="popup" id="media-popup">
-  <iframe width="720" height="550" src="" frameborder="0" allowfullscreen></iframe>
-</div>
 
-<div class="force modal micromodal-slide" style="height: 100%;" id="modal-export" aria-hidden="true">
-  <div class="modal__overlay" tabindex="-1">
-    <div class="modal__container" role="dialog" style="width:550px;min-width:200px" aria-modal="true" aria-labelledby="modal-1-title">
-      <header class="modal__header">
-        <h2 class="modal__title" id="">
-          Export Options
-        </h2>
-        <button onclick="exportOptions(false)" type="button" class="jsPanel-btn jsPanel-btn-close jsPanel-btn-md" aria-label="Close" style="color: rgb(255, 255, 255);"><svg data-micromodal-close focusable="false" class="jsPanel-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><path data-micromodal-close fill="currentColor" d="M13.7,11l6.1-6.1c0.4-0.4,0.4-0.9,0-1.3l-1.4-1.4c-0.4-0.4-0.9-0.4-1.3,0L11,8.3L4.9,2.3C4.6,1.9,4,1.9,3.7,2.3L2.3,3.7 C1.9,4,1.9,4.6,2.3,4.9L8.3,11l-6.1,6.1c-0.4,0.4-0.4,0.9,0,1.3l1.4,1.4c0.4,0.4,0.9,0.4,1.3,0l6.1-6.1l6.1,6.1 c0.4,0.4,0.9,0.4,1.3,0l1.4-1.4c0.4-0.4,0.4-0.9,0-1.3L13.7,11z"></path></svg></button>
-      </header>
-      <main class="" id="" style="display: flex;flex-wrap: wrap;color:white">
-        <div class="settings_block">
-          <label for="exportname" class="label_settings">Package name: </label>
-          <input  id="exportname" class="input input_settings" required="true" placeholder="Type name...">
+  <div class="force modal micromodal-slide" style="height: 100%;" id="modal-pict" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1">
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <header class="modal__header">
+          <h2 class="modal__title" id="modal-pict-title">
+            Find Images
+          </h2>
+          <button data-micromodal-close type="button" class="jsPanel-btn jsPanel-btn-close jsPanel-btn-md"
+            aria-label="Close" style="color: rgb(255, 255, 255);"><svg data-micromodal-close focusable="false"
+              class="jsPanel-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+              <path data-micromodal-close fill="currentColor"
+                d="M13.7,11l6.1-6.1c0.4-0.4,0.4-0.9,0-1.3l-1.4-1.4c-0.4-0.4-0.9-0.4-1.3,0L11,8.3L4.9,2.3C4.6,1.9,4,1.9,3.7,2.3L2.3,3.7 C1.9,4,1.9,4.6,2.3,4.9L8.3,11l-6.1,6.1c-0.4,0.4-0.4,0.9,0,1.3l1.4,1.4c0.4,0.4,0.9,0.4,1.3,0l6.1-6.1l6.1,6.1 c0.4,0.4,0.9,0.4,1.3,0l1.4-1.4c0.4-0.4,0.4-0.9,0-1.3L13.7,11z">
+              </path>
+            </svg></button>
+        </header>
+        <main class="modal__content" id="modal-pict-content" style="display: flex;flex-wrap: wrap;">
+
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn modal__btn-primary" onclick="selectedPict()"> Save </button>
+          <button class="gogo modal__btn" data-micromodal-close aria-label="Close">Cancel</button>
+        </footer>
       </div>
-      <div class="settings_block">
-        <input style="height: 25px;margin-right:10px" id="exportconf" class="" type="checkbox" > <label> Export Configuration ?</label>
-    </div>
-      </main>
-      <footer class="modal__footer">
-        <button class="modal__btn modal__btn-primary" onclick="exportOptions(true)">Export </button>
-        <button class="gogo modal__btn" aria-label="Close" onclick="exportOptions(false)" focus>Cancel</button>
-      </footer>
     </div>
   </div>
-</div> 
 
-<div class="force modal micromodal-slide" style="height: 100%;" id="modal-export" aria-hidden="true">
-  <div class="modal__overlay" tabindex="-1">
-    <div class="modal__container" role="dialog" style="width:550px;min-width:200px" aria-modal="true" aria-labelledby="modal-1-title">
-      <header class="modal__header">
-        <h2 class="modal__title" id="">
-          Export Options
-        </h2>
-        <button onclick="exportOptions(false)" type="button" class="jsPanel-btn jsPanel-btn-close jsPanel-btn-md" aria-label="Close" style="color: rgb(255, 255, 255);"><svg data-micromodal-close focusable="false" class="jsPanel-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><path data-micromodal-close fill="currentColor" d="M13.7,11l6.1-6.1c0.4-0.4,0.4-0.9,0-1.3l-1.4-1.4c-0.4-0.4-0.9-0.4-1.3,0L11,8.3L4.9,2.3C4.6,1.9,4,1.9,3.7,2.3L2.3,3.7 C1.9,4,1.9,4.6,2.3,4.9L8.3,11l-6.1,6.1c-0.4,0.4-0.4,0.9,0,1.3l1.4,1.4c0.4,0.4,0.9,0.4,1.3,0l6.1-6.1l6.1,6.1 c0.4,0.4,0.9,0.4,1.3,0l1.4-1.4c0.4-0.4,0.4-0.9,0-1.3L13.7,11z"></path></svg></button>
-      </header>
-      <main class="" id="" style="display: flex;flex-wrap: wrap;color:white">
-        <div class="settings_block">
-          <label for="exportname" class="label_settings">Package name: </label>
-          <input  id="exportname" class="input input_settings" required="true" placeholder="Type name...">
+  <div class="force modal micromodal-slide" style="height: 100%;" id="modal-confirm" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1">
+      <div class="modal__container" role="dialog" style="width:350px;min-width:200px" aria-modal="true"
+        aria-labelledby="modal-1-title">
+        <header class="modal__header">
+          <h2 class="modal__title" id="">
+            Are you sure ?
+          </h2>
+          <button onclick="clearAllDamn(false)" type="button" class="jsPanel-btn jsPanel-btn-close jsPanel-btn-md"
+            aria-label="Close" style="color: rgb(255, 255, 255);"><svg data-micromodal-close focusable="false"
+              class="jsPanel-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+              <path data-micromodal-close fill="currentColor"
+                d="M13.7,11l6.1-6.1c0.4-0.4,0.4-0.9,0-1.3l-1.4-1.4c-0.4-0.4-0.9-0.4-1.3,0L11,8.3L4.9,2.3C4.6,1.9,4,1.9,3.7,2.3L2.3,3.7 C1.9,4,1.9,4.6,2.3,4.9L8.3,11l-6.1,6.1c-0.4,0.4-0.4,0.9,0,1.3l1.4,1.4c0.4,0.4,0.9,0.4,1.3,0l6.1-6.1l6.1,6.1 c0.4,0.4,0.9,0.4,1.3,0l1.4-1.4c0.4-0.4,0.4-0.9,0-1.3L13.7,11z">
+              </path>
+            </svg></button>
+        </header>
+        <main class="" id="" style="display: flex;flex-wrap: wrap;color:white">
+          <br>This will delete all template settings!<br><br>Unless you have exported your configuration, everything
+          will be lost!<br><br>
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn modal__btn-primary" onclick="clearAllDamn(true)"> Do it </button>
+          <button class="gogo modal__btn" aria-label="Close" onclick="clearAllDamn(false)">Cancel</button>
+        </footer>
       </div>
-      <div class="settings_block">
-        <input style="height: 25px;margin-right:10px" id="exportconf" class="" type="checkbox" > <label> Export Configuration ?</label>
-    </div>
-      </main>
-      <footer class="modal__footer">
-        <button class="modal__btn modal__btn-primary" onclick="exportOptions(true)">Export </button>
-        <button class="gogo modal__btn" aria-label="Close" onclick="exportOptions(false)" focus>Cancel</button>
-      </footer>
     </div>
   </div>
-</div> 
 
+  <div class="popup" id="media-popup">
+    <iframe width="720" height="550" src="" frameborder="0" allowfullscreen></iframe>
+  </div>
 
-<div class="force modal micromodal-slide" style="height: 100%;" id="modal-warn" aria-hidden="true">
-  <div class="modal__overlay" tabindex="-1">
-    <div class="modal__container" role="dialog" style="width:550px;min-width:200px" aria-modal="true" aria-labelledby="modal-1-title">
-      <header class="modal__header">
-        <h2 class="modal__title" id="">
-          Terms & Conditions
-        </h2>
-      </header>
-      <main class="" id="" style="display: flex;flex-wrap: wrap;color:white">
-        <div style="margin:15px">
-          This is NOT a Tableau supported tool<br>
-          Despite efforts to write good and useful code there may be bugs that cause unexpected and undesirable behavior.
-          <br>The software is strictly “use at your own risk”.
+  <div class="force modal micromodal-slide" style="height: 100%;" id="modal-export" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1">
+      <div class="modal__container" role="dialog" style="width:550px;min-width:200px" aria-modal="true"
+        aria-labelledby="modal-1-title">
+        <header class="modal__header">
+          <h2 class="modal__title" id="">
+            Export Options
+          </h2>
+          <button onclick="exportOptions(false)" type="button" class="jsPanel-btn jsPanel-btn-close jsPanel-btn-md"
+            aria-label="Close" style="color: rgb(255, 255, 255);"><svg data-micromodal-close focusable="false"
+              class="jsPanel-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+              <path data-micromodal-close fill="currentColor"
+                d="M13.7,11l6.1-6.1c0.4-0.4,0.4-0.9,0-1.3l-1.4-1.4c-0.4-0.4-0.9-0.4-1.3,0L11,8.3L4.9,2.3C4.6,1.9,4,1.9,3.7,2.3L2.3,3.7 C1.9,4,1.9,4.6,2.3,4.9L8.3,11l-6.1,6.1c-0.4,0.4-0.4,0.9,0,1.3l1.4,1.4c0.4,0.4,0.9,0.4,1.3,0l6.1-6.1l6.1,6.1 c0.4,0.4,0.9,0.4,1.3,0l1.4-1.4c0.4-0.4,0.4-0.9,0-1.3L13.7,11z">
+              </path>
+            </svg></button>
+        </header>
+        <main class="" id="" style="display: flex;flex-wrap: wrap;color:white">
+          <div class="settings_block">
+            <label for="exportname" class="label_settings">Package name: </label>
+            <input id="exportname" class="input input_settings" required="true" placeholder="Type name...">
+          </div>
+          <div class="settings_block">
+            <input style="height: 25px;margin-right:10px" id="exportconf" class="" type="checkbox"> <label> Export
+              Configuration ?</label>
+          </div>
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn modal__btn-primary" onclick="exportOptions(true)">Export </button>
+          <button class="gogo modal__btn" aria-label="Close" onclick="exportOptions(false)" focus>Cancel</button>
+        </footer>
       </div>
-      </main>
-      <footer class="modal__footer">
-        <button class="modal__btn modal__btn-primary" onclick="closeWarn()">I agree </button>
-      </footer>
     </div>
   </div>
-</div>
+
+  <div class="force modal micromodal-slide" style="height: 100%;" id="modal-export" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1">
+      <div class="modal__container" role="dialog" style="width:550px;min-width:200px" aria-modal="true"
+        aria-labelledby="modal-1-title">
+        <header class="modal__header">
+          <h2 class="modal__title" id="">
+            Export Options
+          </h2>
+          <button onclick="exportOptions(false)" type="button" class="jsPanel-btn jsPanel-btn-close jsPanel-btn-md"
+            aria-label="Close" style="color: rgb(255, 255, 255);"><svg data-micromodal-close focusable="false"
+              class="jsPanel-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+              <path data-micromodal-close fill="currentColor"
+                d="M13.7,11l6.1-6.1c0.4-0.4,0.4-0.9,0-1.3l-1.4-1.4c-0.4-0.4-0.9-0.4-1.3,0L11,8.3L4.9,2.3C4.6,1.9,4,1.9,3.7,2.3L2.3,3.7 C1.9,4,1.9,4.6,2.3,4.9L8.3,11l-6.1,6.1c-0.4,0.4-0.4,0.9,0,1.3l1.4,1.4c0.4,0.4,0.9,0.4,1.3,0l6.1-6.1l6.1,6.1 c0.4,0.4,0.9,0.4,1.3,0l1.4-1.4c0.4-0.4,0.4-0.9,0-1.3L13.7,11z">
+              </path>
+            </svg></button>
+        </header>
+        <main class="" id="" style="display: flex;flex-wrap: wrap;color:white">
+          <div class="settings_block">
+            <label for="exportname" class="label_settings">Package name: </label>
+            <input id="exportname" class="input input_settings" required="true" placeholder="Type name...">
+          </div>
+          <div class="settings_block">
+            <input style="height: 25px;margin-right:10px" id="exportconf" class="" type="checkbox"> <label> Export
+              Configuration ?</label>
+          </div>
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn modal__btn-primary" onclick="exportOptions(true)">Export </button>
+          <button class="gogo modal__btn" aria-label="Close" onclick="exportOptions(false)" focus>Cancel</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="force modal micromodal-slide" style="height: 100%;" id="modal-warn" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1">
+      <div class="modal__container" role="dialog" style="width:550px;min-width:200px" aria-modal="true"
+        aria-labelledby="modal-1-title">
+        <header class="modal__header">
+          <h2 class="modal__title" id="">
+            Terms & Conditions
+          </h2>
+        </header>
+        <main class="" id="" style="display: flex;flex-wrap: wrap;color:white">
+          <div style="margin:15px">
+            This is NOT a Tableau supported tool<br>
+            Despite efforts to write good and useful code there may be bugs that cause unexpected and undesirable
+            behavior.
+            <br>The software is strictly “use at your own risk”.
+          </div>
+        </main>
+        <footer class="modal__footer">
+          <button class="modal__btn modal__btn-primary" onclick="closeWarn()">I agree </button>
+        </footer>
+      </div>
+    </div>
+  </div>
 
 </body>
 
@@ -417,7 +470,10 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-20QN2JWP6N"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
   gtag('js', new Date());
 
   gtag('config', 'G-20QN2JWP6N');
