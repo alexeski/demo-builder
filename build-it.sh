@@ -20,4 +20,4 @@ docker push alexswedocker/emb-demo-builder-eski
 
 # this is to create the windows and mac apps (locally)
 npm run dist #this creates an installer on windows and on mac (a propper mac app inside a zip, and also a mac installer)
-electron-builder --windows nsis:x64 #this creates a portable windows exe, if we don;t want to use the installer
+electron-builder --windows nsis:x64 #this creates a windows exe (folder), if we don't want to use the installer
